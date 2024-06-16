@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        body {
+            background-color: #d4d400; /* Light yellow background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between boxes */
+        }
+
+        .sidebar a {
+            position: relative; /* Relative positioning for pseudo-element */
+            display: block;
+            padding: 10px;
+            padding-left: 40px; /* Space for the small black box */
+            text-decoration: none;
+            color: #000; /* Black text */
+            background-color: #fff; /* White background */
+            border: 2px solid #000; /* Black border */
+            text-align: left; /* Align text to the left */
+            font-weight: bold; /* Bold text */
+        }
+
+        .sidebar a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -12px; /* Position to the left of the link */
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #000; /* Black small box */
+            border: 2px solid #000; /* Small black box border */
+        }
+
+        .sidebar a:hover {
+            background-color: #f0f0f0; /* Light grey on hover */
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #d4d400; /* Match body background */
+        }
+
+        h1 {
+            color: #a925a9; /* Purple color */
+        }
+
+        p {
+            color: #000; /* Black text */
+        }
+
+        .note {
+            font-style: italic;
+            color: #a925a9; /* Purple color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <a href="#">Home page</a>
+        <a href="#">Musings</a>
+        <a href="#">My town</a>
+        <a href="#">Links</a>
+    </div>
+    <div class="content">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+        <p>There should be more here, but I don’t know what yet.</p>
+        <p class="note">Made 5 April 2004 by myself.</p>
+    </div>
+</div>
+
+</body>
+</html>

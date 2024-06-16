@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" value="text"></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" value="text"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" value="password"></td>
+            </tr>
+            <tr>
+                <td>Re Password:</td>
+                <td><input type="password" name="repassword" value="password"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" value="text"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" name="age" value="number"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select name="gender">
+                        <option value="Male" selected>Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
